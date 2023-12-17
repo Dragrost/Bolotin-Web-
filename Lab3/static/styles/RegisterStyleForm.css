@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    align-items: center;
+    background-image: url(../images/Backgroung.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.register {
+    align-items: center;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    width: 350px;
+    height: 450px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 35px 15px rgba(0,0,0,0.5);
+    backdrop-filter: blur(5px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.register h2{
+    font-size: 2em;
+    font-weight: 600;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font: italic;
+}
+
+.input-box{
+    margin: 20px 0;
+    width: 280px;
+    border-bottom: 2px solid white;
+}
+.input-box input {
+    width: 98%;
+    height: 25px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 10px;
+    color: white;
+}
+::placeholder {
+    color: white;
+}
+
+.button{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.button button {
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    width: 90%;
+    height: 50px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.button button:hover {
+    background-color: rgb(65, 65, 65)
+}
+
+.logForm {
+    font-size: 0.9em;
+    text-align: center;
+    color: white;
+    margin: 25 0 10px;
+}
+
+.logForm a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+

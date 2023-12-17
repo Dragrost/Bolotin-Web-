@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <h1>{{title}}</h1>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h1>Введите данные</h1>
+    <form method="post">
+        <label>Имя доктора</label><br>
+        <input type="text" name="userName" /><br><br>
+        <label>Дату записи "YYYY-mm-ddTHH:MM:ss"</label><br>
+        <input type="text" name="userName" /><br><br>
+        <input type="submit" value="Отправить" />
+    </form>
+    {{#if error}}
+        <h3>Запись на данное время недоступно!</h3>
+    {{/if}}
+</body>
+</html>

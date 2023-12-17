@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/styles/RegisterStyleForm.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <section>
+        <div class="register">
+            <form method="post" action="#">
+                <div class="fields">
+                    <h2>Регистрация</h2>
+                    <div class="input-box">
+                        <input minlength="4" type="text" name="login" required placeholder="Login">
+                    </div>
+                    <div class="input-box">
+                        <input minlength="4" id="password" type="password" name="password" required placeholder="Password">
+                    </div>
+                    <div class="input-box">
+                        <input minlength="4" id="confPassword" type="password" name="confPassword" required placeholder="Confirm password">
+                    </div>
+                    <div class="button">
+                        <script  src="../scripts/PasswordChecker.js"></script>
+                        <button type="submit" onclick="PasswordChecker()">Зарегистрироваться</button>
+                    </div>
+                    <div class="logForm">
+                        <p>Есть аккаунт? - <a href="../pages/LogForm.html">войти</a></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

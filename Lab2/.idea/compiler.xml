@@ -7,11 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="subProject3" />
+        <module name="libStr" />
         <module name="lab2_2" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="libStr" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
