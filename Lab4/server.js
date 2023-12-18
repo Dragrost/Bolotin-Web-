@@ -188,10 +188,6 @@ async function getLog(){
         const user = await User.findOne({_id: allReceptions[i].userID});
         const doctor =  await Doctor.findOne({_id: allReceptions[i].doctorID});
 
-        /*console.log(h + " " + now.format("HH"));
-        console.log(minute + " " + now.format("mm"));
-        console.log(s + " " + now.format("SS"));*/
-
         if (Math.abs(d - now.format("dd")) == 1 && h == now.format("HH") && minute == now.format("mm") && s == now.format("SS")){
             return now + "| Привет " + user.name + "! Напоминаем, что вы записаны к " + doctor.spec + "у завтра(" + d + ") в " + h + ":" + minute + ":" + s + "!\n"
         }
